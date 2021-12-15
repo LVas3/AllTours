@@ -45,9 +45,10 @@ namespace AllTours
             DB db = new DB();
             MySqlCommand command = new MySqlCommand("INSERT INTO `feedback` ( `NameUser`,`NameTour`,`Rating`,`Message`) VALUES(@nuser,@ntour,@rate,@mes)", db.getConnection());
             command.Parameters.Add("@nuser", MySqlDbType.VarChar).Value = textBoxNameUser.Text;
+           
+            command.Parameters.Add("@ntour", MySqlDbType.VarChar).Value = NameTourcomboBox.SelectedItem;
             command.Parameters.Add("@rate", MySqlDbType.VarChar).Value = comboBoxRating.SelectedItem;
 
-            command.Parameters.Add("@ntour", MySqlDbType.VarChar).Value = NameTourcomboBox.SelectedItem;
             command.Parameters.Add("@mes", MySqlDbType.VarChar).Value = richTextBoxFBack.Text;
 
             db.OpenConnect();

@@ -35,5 +35,11 @@ namespace AllTours
             DBTours dbt = new DBTours();
             dbt.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DBFeedback dbf = new DBFeedback();
+            dbf.Show();
+        }
     }
 }

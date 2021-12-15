@@ -43,15 +43,15 @@ namespace AllTours
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 49);
+            this.label1.Location = new System.Drawing.Point(335, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Ваше ФИО";
             // 
             // textBoxNameUser
             // 
-            this.textBoxNameUser.Location = new System.Drawing.Point(294, 83);
+            this.textBoxNameUser.Location = new System.Drawing.Point(335, 63);
             this.textBoxNameUser.Name = "textBoxNameUser";
             this.textBoxNameUser.Size = new System.Drawing.Size(125, 27);
             this.textBoxNameUser.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace AllTours
             // NameTourcomboBox
             // 
             this.NameTourcomboBox.FormattingEnabled = true;
-            this.NameTourcomboBox.Location = new System.Drawing.Point(294, 140);
+            this.NameTourcomboBox.Location = new System.Drawing.Point(194, 130);
             this.NameTourcomboBox.Name = "NameTourcomboBox";
             this.NameTourcomboBox.Size = new System.Drawing.Size(266, 28);
             this.NameTourcomboBox.TabIndex = 2;
@@ -68,11 +68,11 @@ namespace AllTours
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(294, 117);
+            this.label2.Location = new System.Drawing.Point(194, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(166, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "Название вашего тура";
             // 
             // richTextBoxFBack
             // 
@@ -85,11 +85,11 @@ namespace AllTours
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(294, 192);
+            this.label3.Location = new System.Drawing.Point(194, 196);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
+            this.label3.Size = new System.Drawing.Size(435, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.label3.Text = "Напишите подробно о впечатлениях тура (до 255 символов)";
             // 
             // Feedbackbutton
             // 
@@ -97,23 +97,23 @@ namespace AllTours
             this.Feedbackbutton.Name = "Feedbackbutton";
             this.Feedbackbutton.Size = new System.Drawing.Size(183, 48);
             this.Feedbackbutton.TabIndex = 6;
-            this.Feedbackbutton.Text = "button1";
+            this.Feedbackbutton.Text = "Отправить отзыв";
             this.Feedbackbutton.UseVisualStyleBackColor = true;
             this.Feedbackbutton.Click += new System.EventHandler(this.Feedbackbutton_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(603, 117);
+            this.label4.Location = new System.Drawing.Point(503, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.Size = new System.Drawing.Size(150, 20);
             this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
+            this.label4.Text = "Оценка вашего тура";
             // 
             // comboBoxRating
             // 
             this.comboBoxRating.FormattingEnabled = true;
-            this.comboBoxRating.Location = new System.Drawing.Point(603, 140);
+            this.comboBoxRating.Location = new System.Drawing.Point(503, 130);
             this.comboBoxRating.Name = "comboBoxRating";
             this.comboBoxRating.Size = new System.Drawing.Size(100, 28);
             this.comboBoxRating.TabIndex = 7;
