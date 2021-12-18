@@ -30,7 +30,6 @@ namespace AllTours
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TourismForm));
-            this.labelforvisa = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,15 +56,6 @@ namespace AllTours
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelforvisa
-            // 
-            this.labelforvisa.AutoSize = true;
-            this.labelforvisa.Location = new System.Drawing.Point(395, 357);
-            this.labelforvisa.Name = "labelforvisa";
-            this.labelforvisa.Size = new System.Drawing.Size(60, 20);
-            this.labelforvisa.TabIndex = 56;
-            this.labelforvisa.Text = "+2500р";
             // 
             // checkBox1
             // 
@@ -270,7 +260,6 @@ namespace AllTours
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(636, 402);
-            this.Controls.Add(this.labelforvisa);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label9);
@@ -306,8 +295,6 @@ namespace AllTours
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelforvisa;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label9;

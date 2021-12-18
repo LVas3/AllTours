@@ -51,7 +51,6 @@ namespace AllTours
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.labelforvisa = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -270,22 +269,12 @@ namespace AllTours
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // labelforvisa
-            // 
-            this.labelforvisa.AutoSize = true;
-            this.labelforvisa.Location = new System.Drawing.Point(444, 347);
-            this.labelforvisa.Name = "labelforvisa";
-            this.labelforvisa.Size = new System.Drawing.Size(60, 20);
-            this.labelforvisa.TabIndex = 19;
-            this.labelforvisa.Text = "+2500р";
-            // 
             // CruiseTourForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(600, 405);
-            this.Controls.Add(this.labelforvisa);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label9);
@@ -343,6 +332,5 @@ namespace AllTours
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label labelforvisa;
     }
 }

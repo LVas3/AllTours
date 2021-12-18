@@ -50,14 +50,14 @@ namespace AllTours
             {
                 comboBoxDayNightK.Items.Remove("3 дня/ 3 ночи");
                 comboBoxDayNightK.Items.Remove("10 дней/10 ночей");
-                checkBox1.Checked = true;
+               checkBox1.Checked = true;
 
             }
             if (comboBoxChooseTourK.SelectedItem == "Доминикана")
             {
                 comboBoxDayNightK.Items.Remove("3 дня/ 3 ночи");
                 comboBoxDayNightK.Items.Remove("7 дней/7 ночей");
-                checkBox1.Checked = false;
+               checkBox1.Checked = false;
 
             }
             if (comboBoxChooseTourK.SelectedItem == "Португалия")
@@ -65,7 +65,7 @@ namespace AllTours
                 comboBoxDayNightK.Items.Remove("3 дня/ 3 ночи");
 
                 comboBoxDayNightK.Items.Remove("14 дней/14 ночей");
-                checkBox1.Checked = true;
+             checkBox1.Checked = true;
 
             }
 
@@ -74,7 +74,7 @@ namespace AllTours
                 comboBoxDayNightK.Items.Remove("3 дня/ 3 ночи");
                 comboBoxDayNightK.Items.Remove("7 дней/7 ночей");
                 //comboBoxDayNightK.Items.Remove("14 дней/14 ночей");
-                checkBox1.Checked = false;
+              checkBox1.Checked = false;
 
             }
             if (comboBoxChooseTourK.SelectedItem == "Турецкое солнце")
@@ -82,7 +82,7 @@ namespace AllTours
                 comboBoxDayNightK.Items.Remove("3 дня/ 3 ночи");
                 comboBoxDayNightK.Items.Remove("7 дней/7 ночей");
                 comboBoxDayNightK.Items.Remove("14 дней/14 ночей");
-                checkBox1.Checked = false;
+               checkBox1.Checked = false;
 
             }
 

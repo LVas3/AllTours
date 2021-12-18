@@ -33,8 +33,6 @@ namespace AllTours
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelforvisa = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,6 +49,7 @@ namespace AllTours
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBoxChooseTourK = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -87,25 +86,6 @@ namespace AllTours
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // labelforvisa
-            // 
-            this.labelforvisa.AutoSize = true;
-            this.labelforvisa.Location = new System.Drawing.Point(413, 362);
-            this.labelforvisa.Name = "labelforvisa";
-            this.labelforvisa.Size = new System.Drawing.Size(60, 20);
-            this.labelforvisa.TabIndex = 37;
-            this.labelforvisa.Text = "+2500р";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(388, 338);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(159, 24);
-            this.checkBox1.TabIndex = 36;
-            this.checkBox1.Text = "Требуется Шенген";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -264,13 +244,22 @@ namespace AllTours
             this.comboBoxChooseTourK.SelectedIndexChanged += new System.EventHandler(this.comboBoxChooseTour_SelectedIndexChanged);
             this.comboBoxChooseTourK.SelectionChangeCommitted += new System.EventHandler(this.comboBoxChooseTourK_SelectionChangeCommitted);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(413, 355);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(137, 24);
+            this.checkBox1.TabIndex = 36;
+            this.checkBox1.Text = "Требуется виза";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // ResortTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(600, 405);
-            this.Controls.Add(this.labelforvisa);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label9);
@@ -310,8 +299,6 @@ namespace AllTours
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelforvisa;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -328,5 +315,6 @@ namespace AllTours
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBoxChooseTourK;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -17,7 +17,7 @@ namespace AllTours
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistrationF());
+            Application.Run(new FormChooseTour());
         }
     }
 }

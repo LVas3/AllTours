@@ -130,14 +130,7 @@ namespace AllTours
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
-            {
-                labelforvisa.Visible = true;
-            }
-            else
-            {
-                labelforvisa.Visible = false;
-            }
+           
         }
 
         private void label9_Click(object sender, EventArgs e)
