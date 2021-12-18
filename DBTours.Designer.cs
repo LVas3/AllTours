@@ -47,7 +47,11 @@ namespace AllTours
             this.labelchild = new System.Windows.Forms.Label();
             this.OldTxt = new System.Windows.Forms.TextBox();
             this.labelold = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Clearbutton
@@ -208,11 +212,40 @@ namespace AllTours
             this.labelold.TabIndex = 40;
             this.labelold.Text = "Количество взрослых";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(1, -2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1081, 76);
+            this.panel1.TabIndex = 44;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(982, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "вернуться";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(365, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "БД Туров";
+            // 
             // DBTours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 530);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ChildTxt);
             this.Controls.Add(this.labelchild);
             this.Controls.Add(this.OldTxt);
@@ -234,6 +267,8 @@ namespace AllTours
             this.Name = "DBTours";
             this.Text = "DBTours";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +294,8 @@ namespace AllTours
         private System.Windows.Forms.Label labelchild;
         private System.Windows.Forms.TextBox OldTxt;
         private System.Windows.Forms.Label labelold;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -35,6 +35,8 @@ namespace AllTours
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.buttonRegist = new System.Windows.Forms.Button();
             this.buttonSignIn = new System.Windows.Forms.Button();
             this.pictureBoxvispass = new System.Windows.Forms.PictureBox();
@@ -103,6 +105,8 @@ namespace AllTours
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.buttonRegist);
             this.panel2.Controls.Add(this.buttonSignIn);
             this.panel2.Controls.Add(this.pictureBoxvispass);
@@ -115,6 +119,24 @@ namespace AllTours
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(499, 425);
             this.panel2.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(79, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Введите пароль";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(79, 141);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Введите логин";
             // 
             // buttonRegist
             // 
@@ -151,7 +173,7 @@ namespace AllTours
             // pictureBoxvispass
             // 
             this.pictureBoxvispass.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxvispass.Image")));
-            this.pictureBoxvispass.Location = new System.Drawing.Point(437, 229);
+            this.pictureBoxvispass.Location = new System.Drawing.Point(436, 245);
             this.pictureBoxvispass.Name = "pictureBoxvispass";
             this.pictureBoxvispass.Size = new System.Drawing.Size(40, 42);
             this.pictureBoxvispass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +185,7 @@ namespace AllTours
             // 
             this.panel4.Controls.Add(this.textBoxPassword);
             this.panel4.Controls.Add(this.pictureBoxPassword);
-            this.panel4.Location = new System.Drawing.Point(21, 229);
+            this.panel4.Location = new System.Drawing.Point(20, 245);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(412, 42);
             this.panel4.TabIndex = 3;
@@ -288,6 +310,8 @@ namespace AllTours
         private System.Windows.Forms.PictureBox PBLogo;
         private System.Windows.Forms.Button buttonSignIn;
         private System.Windows.Forms.Button buttonRegist;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

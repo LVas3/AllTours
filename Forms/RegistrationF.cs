@@ -16,6 +16,7 @@ namespace AllTours
         public RegistrationF()
         {
             InitializeComponent();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -78,6 +79,11 @@ namespace AllTours
         private void close_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

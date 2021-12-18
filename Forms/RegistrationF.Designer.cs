@@ -31,6 +31,7 @@ namespace AllTours
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationF));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,7 +51,11 @@ namespace AllTours
             this.panel3 = new System.Windows.Forms.Panel();
             this.TBUser = new System.Windows.Forms.TextBox();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
-            this.close_btn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -76,18 +81,40 @@ namespace AllTours
             this.panel1.Size = new System.Drawing.Size(800, 103);
             this.panel1.TabIndex = 0;
             // 
+            // close_btn
+            // 
+            this.close_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.close_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close_btn.FlatAppearance.BorderSize = 0;
+            this.close_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_btn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.close_btn.ForeColor = System.Drawing.Color.White;
+            this.close_btn.Location = new System.Drawing.Point(756, 0);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(44, 53);
+            this.close_btn.TabIndex = 3;
+            this.close_btn.Text = "x";
+            this.close_btn.UseVisualStyleBackColor = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(345, 47);
+            this.label1.Location = new System.Drawing.Point(284, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(212, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Регистрация";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.buttonSignUp);
             this.panel2.Controls.Add(this.panel7);
@@ -100,12 +127,13 @@ namespace AllTours
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 347);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(475, 292);
+            this.label2.Location = new System.Drawing.Point(516, 296);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 20);
             this.label2.TabIndex = 9;
@@ -120,7 +148,7 @@ namespace AllTours
             this.buttonSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSignUp.ForeColor = System.Drawing.Color.White;
-            this.buttonSignUp.Location = new System.Drawing.Point(453, 213);
+            this.buttonSignUp.Location = new System.Drawing.Point(494, 217);
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.Size = new System.Drawing.Size(231, 54);
             this.buttonSignUp.TabIndex = 8;
@@ -134,7 +162,7 @@ namespace AllTours
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Location = new System.Drawing.Point(38, 217);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(225, 42);
+            this.panel7.Size = new System.Drawing.Size(287, 42);
             this.panel7.TabIndex = 7;
             // 
             // EmailtextBox
@@ -143,7 +171,7 @@ namespace AllTours
             this.EmailtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.EmailtextBox.Location = new System.Drawing.Point(59, 0);
             this.EmailtextBox.Name = "EmailtextBox";
-            this.EmailtextBox.Size = new System.Drawing.Size(166, 36);
+            this.EmailtextBox.Size = new System.Drawing.Size(225, 36);
             this.EmailtextBox.TabIndex = 1;
             // 
             // pictureBox3
@@ -162,7 +190,7 @@ namespace AllTours
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Location = new System.Drawing.Point(453, 137);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(225, 42);
+            this.panel5.Size = new System.Drawing.Size(289, 42);
             this.panel5.TabIndex = 7;
             // 
             // SurnametextBox
@@ -170,7 +198,7 @@ namespace AllTours
             this.SurnametextBox.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SurnametextBox.Location = new System.Drawing.Point(59, 2);
             this.SurnametextBox.Name = "SurnametextBox";
-            this.SurnametextBox.Size = new System.Drawing.Size(166, 36);
+            this.SurnametextBox.Size = new System.Drawing.Size(230, 36);
             this.SurnametextBox.TabIndex = 2;
             // 
             // pictureBox1
@@ -189,7 +217,7 @@ namespace AllTours
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Location = new System.Drawing.Point(453, 72);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(225, 42);
+            this.panel6.Size = new System.Drawing.Size(289, 42);
             this.panel6.TabIndex = 6;
             // 
             // NametextBox
@@ -198,7 +226,7 @@ namespace AllTours
             this.NametextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.NametextBox.Location = new System.Drawing.Point(59, 0);
             this.NametextBox.Name = "NametextBox";
-            this.NametextBox.Size = new System.Drawing.Size(166, 36);
+            this.NametextBox.Size = new System.Drawing.Size(227, 36);
             this.NametextBox.TabIndex = 1;
             // 
             // pictureBox2
@@ -217,7 +245,7 @@ namespace AllTours
             this.panel4.Controls.Add(this.pictureBoxPassword);
             this.panel4.Location = new System.Drawing.Point(38, 137);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(225, 42);
+            this.panel4.Size = new System.Drawing.Size(287, 42);
             this.panel4.TabIndex = 5;
             // 
             // textBoxPassword
@@ -225,7 +253,7 @@ namespace AllTours
             this.textBoxPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.Location = new System.Drawing.Point(59, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(166, 36);
+            this.textBoxPassword.Size = new System.Drawing.Size(225, 36);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
@@ -245,16 +273,17 @@ namespace AllTours
             this.panel3.Controls.Add(this.pictureBoxUser);
             this.panel3.Location = new System.Drawing.Point(38, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(225, 42);
+            this.panel3.Size = new System.Drawing.Size(287, 42);
             this.panel3.TabIndex = 4;
             // 
             // TBUser
             // 
+            this.TBUser.BackColor = System.Drawing.SystemColors.HighlightText;
             this.TBUser.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TBUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.TBUser.Location = new System.Drawing.Point(59, 0);
             this.TBUser.Name = "TBUser";
-            this.TBUser.Size = new System.Drawing.Size(166, 36);
+            this.TBUser.Size = new System.Drawing.Size(228, 36);
             this.TBUser.TabIndex = 1;
             // 
             // pictureBoxUser
@@ -267,21 +296,50 @@ namespace AllTours
             this.pictureBoxUser.TabIndex = 0;
             this.pictureBoxUser.TabStop = false;
             // 
-            // close_btn
+            // label3
             // 
-            this.close_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.close_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close_btn.FlatAppearance.BorderSize = 0;
-            this.close_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_btn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.close_btn.ForeColor = System.Drawing.Color.White;
-            this.close_btn.Location = new System.Drawing.Point(756, 0);
-            this.close_btn.Name = "close_btn";
-            this.close_btn.Size = new System.Drawing.Size(44, 53);
-            this.close_btn.TabIndex = 3;
-            this.close_btn.Text = "x";
-            this.close_btn.UseVisualStyleBackColor = false;
-            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(97, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Введите логин";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(97, 116);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 20);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Введите пароль";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(97, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Введите Email";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(512, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(97, 20);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Введите имя";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(512, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 20);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Введите фамилию";
             // 
             // RegistrationF
             // 
@@ -339,5 +397,10 @@ namespace AllTours
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSignUp;
         private System.Windows.Forms.Button close_btn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -27,7 +27,7 @@ namespace AllTours
             dataGridView1.Columns[2].Name = "NameTour";
             dataGridView1.Columns[3].Name = "Rating";
             dataGridView1.Columns[4].Name = "Message";
-           
+
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -102,6 +102,14 @@ namespace AllTours
             string selected = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             int id = Convert.ToInt32(selected);
             Delete(id);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin aform = new Admin();
+        
+
         }
     }
 }

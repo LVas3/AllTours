@@ -122,5 +122,12 @@ namespace AllTours
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin aform = new Admin();
+            
+        }
     }
 }

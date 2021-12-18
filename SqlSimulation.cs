@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +35,25 @@ namespace AllTours
             MySqlCommand cmd = new MySqlCommand($"SELECT login FROM users WHERE Login = @login AND Password = @password", connection);
             cmd.Parameters.AddWithValue("@login", Login);
             cmd.Parameters.AddWithValue("@password", Password);
+            connection.Open();
+            MySqlDataReader srd = cmd.ExecuteReader();
+            if (srd.HasRows)
+            {
+                flag = true;
+            }
+            connection.Close();
+            return flag;
+        }
+        public bool Feedbacks(string NameUser,string NameTour,string Rating,string Messagee)
+        {
+
+            bool flag = false;
+            MySqlCommand cmd = new MySqlCommand($"INSERT INTO users (NameUser, NameTour, Rating, Message) VALUES (@nameuser, @nametour, @rating, @message)", connection);
+            cmd.Parameters.AddWithValue("@nameuser", NameUser);
+            cmd.Parameters.AddWithValue("@nametour", NameTour);
+            cmd.Parameters.AddWithValue("@rating", Rating);
+            cmd.Parameters.AddWithValue("@message", Messagee);
+           
             connection.Open();
             MySqlDataReader srd = cmd.ExecuteReader();
             if (srd.HasRows)

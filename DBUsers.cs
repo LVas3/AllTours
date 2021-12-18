@@ -191,5 +191,12 @@ namespace AllTours
             //dataGridView1.Rows.Clear();
             clearTxts();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin aform = new Admin();
+            aform.Show();
+        }
     }
 }

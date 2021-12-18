@@ -72,6 +72,7 @@ namespace AllTours
             this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "вернуться";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -257,7 +258,7 @@ namespace AllTours
             this.ClientSize = new System.Drawing.Size(994, 555);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-          ///  this.Name = "DBUsers";
+         ///  this.Name = "DBUsers";
             this.Text = "DBUsers";
             this.Load += new System.EventHandler(this.DBUsers_Load);
             this.panel1.ResumeLayout(false);
