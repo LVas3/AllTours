@@ -41,5 +41,11 @@ namespace AllTours
             DBFeedback dbf = new DBFeedback();
             dbf.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SimulationUsers su = new SimulationUsers();
+            su.Show();
+        }
     }
 }
